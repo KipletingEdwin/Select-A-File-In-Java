@@ -11,6 +11,7 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setLayout(new FlowLayout());
 
         JButton button = new JButton("Select File");
+        button.addActionListener(this);
 
 
         this.pack();
