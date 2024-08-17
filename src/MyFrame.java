@@ -5,12 +5,13 @@ import java.awt.event.ActionListener;
 import java.util.jar.JarFile;
 
 public class MyFrame extends JFrame implements ActionListener {
+    JButton button;
 
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        JButton button = new JButton("Select File");
+        button = new JButton("Select File");
         button.addActionListener(this);
 
         this.add(button);
@@ -20,6 +21,10 @@ public class MyFrame extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==button){
+            JFileChooser fileChooser = new JFileChooser();
+
+        }
 
     }
 }
