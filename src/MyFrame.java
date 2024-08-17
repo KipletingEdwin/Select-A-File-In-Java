@@ -9,6 +9,10 @@ public class MyFrame extends JFrame implements ActionListener {
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
+
+        JButton button = new JButton("Select File");
+
+
         this.pack();
         this.setVisible(true);
 
