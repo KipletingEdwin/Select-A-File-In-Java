@@ -13,7 +13,7 @@ public class MyFrame extends JFrame implements ActionListener {
         JButton button = new JButton("Select File");
         button.addActionListener(this);
 
-
+        this.add(button);
         this.pack();
         this.setVisible(true);
 
