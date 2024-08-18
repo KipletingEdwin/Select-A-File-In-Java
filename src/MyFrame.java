@@ -25,6 +25,8 @@ public class MyFrame extends JFrame implements ActionListener {
         if(e.getSource()==button){
             JFileChooser fileChooser = new JFileChooser();
 
+            fileChooser.setCurrentDirectory(new File("C:\\Users\\Cakow\\Desktop"));
+
             int response = fileChooser.showOpenDialog(null);  //select a file to open
 
             if(response == JFileChooser.APPROVE_OPTION){
